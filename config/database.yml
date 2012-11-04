@@ -1,0 +1,19 @@
+common: &common
+  adapter: postgresql
+  username: lilan #affluence2-staging
+  password:  sizzler3 # from psql setup, see Postgresql
+
+development:
+  <<: *common
+  database: affluence_marketing_pages 
+  host: localhost
+  port: 5432
+
+test:
+  <<: *common
+  database: affluence_marketing_pages 
+
+production:
+  <<: *common
+  database: affluence_marketing_pages
+

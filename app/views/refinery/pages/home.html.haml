@@ -1,0 +1,132 @@
+
+
+%div.top_bottom
+  %ul.top_bottom-list.left
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} Features
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} Opportunities
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} News
+
+  %ul.top_bottom-list.right
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} Explore
+    
+%div.central
+  %div.inner
+    %h1 Get Start with Your Membership Today!
+    %p Gain Access to the most Prestigious Events, Meet some of the world's most Powerful People and gain Exclusive Benefits for becoming a member of Affluence.
+    %p
+      /= link_to( 'Register Now', new_user_registration_path, :class => "btn btn-primary btn-large")
+      = link_to( 'Sign Up', :class => "btn_sign")
+
+%div.central1
+  %div.inner
+  %h1 Get Started with 
+  %h1 Your Membership Today!
+  %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam curcus. Morbi ut mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam curcus. Morbi ut mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam curcus.
+
+%div.central2
+  %div.inner
+    %form.form-search
+      .input-append
+        %input.span3.search-query{:placeholder => "Search Connections", :type => "text"}
+          %button.btn.btn-primary{:type => "submit"} SEARCH
+
+%div.central3
+  %div.inner
+    %h2 Create conversations.  Create connections.
+    %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam curcus. Morbi ut mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam curcus. Morbi ut mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam curcus.
+
+/ %div.central_menu_block
+/  %div.central_menu.p1
+/    %strong Affluence Members
+/    %p Learn about affluence members and membership details!
+/    = link_to( 'Learn More', new_user_registration_path, :class => "")
+/  %div.central_menu.p2
+/    %strong Affluence Events
+/    %p Affluence events that are happening this month!
+/    = link_to( 'Learn More', new_user_registration_path, :class => "")
+/  %div.central_menu.p3
+/    %strong Affluence Offers
+/    %p Exclusive Offers for Affluence Members only!
+/    = link_to( 'Learn More', new_user_registration_path, :class => "")
+/  %div.central_menu.p4
+/    %strong Affluence Profile
+/    %p Learn about profile features? connect with other members and more.
+/    = link_to( 'Learn More', new_user_registration_path, :class => "")
+
+
+%div.footer_top
+  %ul.footer_top-list
+    %li.footer_top_a
+      %a{:href => "/home"} Help
+    %li.footer_top_a
+      %a{:href => "/home"} Contact Us
+    %li.footer_top_a
+      %a{:href => "/home"} Fees
+    %li.footer_top_a
+      %a{:href => "/home"} Security
+    %li.footer_top_a
+      %a{:href => "/home"} Account features
+    %li.footer_top_a
+      %a{:href => "/home"} Developer
+    %li.footer_top_a
+      %a{:href => "/home"} Partners
+
+
+/.hero-unit
+/  %h1 Exclusive Access
+/  %p Gain Access to the most Prestigious Events, Meet some of the world's most Powerful People and gain Exclusive Benefits for becoming a member of Affluence.
+/  %p
+/    = link_to( 'Register Now', new_user_registration_path, :class => "btn btn-primary btn-large")
+/.row
+/  .span12
+/    %h2{:style => "text-align:center"}
+/      Bridge the Gap
+/      %hr.soften.zero
+/.row
+/  .span4
+/    %h3 Socialize
+/    %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+/  .span4
+/    %h3 Access
+/    %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+/  .span4
+/    %h3 Benefits
+/    %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+/ row
+/.page-header
+/  %h1
+/    %small upcoming
+/    Events
+/.row#latest_events
+/  #spinner
+/    = image_tag 'ajax-loader.gif', :class => 'ajax-loader'
+/    %p Loading....
+/ row
+/.page-header
+/  %h1
+/    %small top
+/    Offers
+/.row
+/  - @latest_offers.each do |offer|
+/    .span3
+/      .thumbnail
+/        = image_tag offer.promotion.photos.first.image unless offer.promotion.nil?
+/        .caption
+/          %h5= "#{offer.title[0..30]}"
+/          %p= "#{offer.description[0..48]}..."
+
+/ row
+-content_for :javascripts do
+  :javascript
+    $(function () {
+     
+    });
+

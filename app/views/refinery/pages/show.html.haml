@@ -1,0 +1,61 @@
+%div.top_bottom
+  %ul.top_bottom-list.left
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} Stock Info
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} Press Releases 
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} Analyst Reports
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} Company Presentation
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} Request Info/Contact
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} About Us
+
+%div.investor_page
+  = raw @page.content_for(:body)
+    
+%div.footer_top
+  %ul.footer_top-list
+    %li.footer_top_a
+      %a{:href => "/home"} Help
+    %li.footer_top_a
+      %a{:href => "/home"} Contact Us
+    %li.footer_top_a
+      %a{:href => "/home"} Fees
+    %li.footer_top_a
+      %a{:href => "/home"} Security
+    %li.footer_top_a
+      %a{:href => "/home"} Account features
+    %li.footer_top_a
+      %a{:href => "/home"} Developer
+    %li.footer_top_a
+      %a{:href => "/home"} Partners
+
+
+
+
+
+
+/ row
+-content_for :javascripts do
+  :javascript
+    $(function () {
+      
+    });
+
+
+
+
+
+
+
+
+

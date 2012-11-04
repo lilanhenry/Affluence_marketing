@@ -1,0 +1,24 @@
+.navbar.navbar
+  .navbar-inner
+    .container.width1210
+      %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to "",root_path, :class => "brand logo"
+      %div.password_block.bg
+        %input.input.password{:name=>"user[email]", :type => "text",:placeholder=>"Email Address"}
+      %div.password_block.bg
+        %input.input.password{:name => "user[password]", :type => "password",:placeholder=>"Password"}
+                 
+  		
+
+  :javascript
+    $(function(){
+      $('.dropdown-toggle').dropdown();
+    });
+
+
+
+  
+
