@@ -1,0 +1,33 @@
+<% content_for :body_content_title do %>
+  <%= @investment.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @investment.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Content</h1>
+    <p>
+      <%=raw @investment.content %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="investments">
+      <% @investments.each do |investment| %>
+        <li>
+          <%= link_to investment.title, refinery.investments_investment_path(investment) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

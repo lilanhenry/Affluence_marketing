@@ -1,5 +1,27 @@
 @import "bootstrap";
- 
+
+
+#container {
+  padding: 5px;
+  width: 1210px;
+  margin: 0 auto;
+}
+#container #content-left, #content-right {
+  width: 595px;
+  float: left;
+}
+#container #content-right {
+  margin-left: 20px;
+}
+#container #clear {
+  clear: both;
+}
+#container #clear {
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: #CCC;
+}
+
 article,
 aside,
 details,
@@ -3512,6 +3534,7 @@ div.password_block .password{
     height: 55px;
     padding-top: 3px;
     background: #f7f7f7 url(investor_relations.png) no-repeat 15px 13px;
+    position: center;
 }
 .central{
     height: 479px;
@@ -4218,37 +4241,55 @@ text-decoration: none;
 }
 
 
-
-body {
-  font-family: Verdana;
-  font-size: 13px;
-  line-height: 18px;
+#container {
+  padding: 5px;
+  width: 1210px;
+  margin: 0 auto;
 }
-
-#body_content, #side_body_content {
+#container #content-left, #content-right {
+  width: 591px;
   float: left;
-  width: 45%;
-  background: white;
-  color: #333;
-  padding: 20px;
+  padding: 2px;
 }
-
-#menu ul {
-  list-style: none;
-  padding: 0px;
-  li {
-    float: left;
-    margin-right: 10px;
-    a {
-      display: block;
-      padding: 5px 10px;
-      text-decoration: none;
-    }
-    &.selected a, a:hover {
-      background: #CCC;
-    }
-  }
+#container #content-right {
+  margin-left: 20px;
 }
-
+#container #clear {
+  clear: both;
+}
+#container #clear {
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: #CCC;
+}
+#container #content-left #guest, #guest1, #guest2 {
+  border: thin solid #CCC;
+}
+#container #content-left #guest, #guest2{
+  width: 530px;
+}
+#container #content-right #sign {
+  padding: 5px;
+  border-top: solid thin #999;
+}
+#container #content-right #sign #form1 #fname, #lname, #pass, cpass {
+  width: 280px;
+  float: left;
+  margin-bottom: 10px;
+}
+#container #content-right #sign #form1 #lname {
+  margin-left: 20px;
+}
+#container #content-right #sign #form1 #email {
+}
+#container #content-right #sign #join {
+  margin-top: 20px;
+}
+#container #benefits {
+  background-color: #06F;
+}
+#container #benefits table {
+  background-color: #FFF;
+}
 
 

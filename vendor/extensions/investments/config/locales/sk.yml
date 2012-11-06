@@ -1,0 +1,28 @@
+sk:
+  refinery:
+    plugins:
+      investments:
+        title: Investments
+    investments:
+      admin:
+        investments:
+          actions:
+            create_new: Pridať Investment
+            reorder: Preusporiadať Investments
+            reorder_done: Koniec radenia Investments
+          records:
+            title: Investments
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Investments. Kliknite na "Pridať Investment" pre pridanie prvého investment.
+          investment:
+            view_live_html: Zobraziť náhľad investment<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť investment
+            delete: Zmazať investment
+      investments:
+        show:
+          other: Daľšie Investments
+  activerecord:
+    attributes:
+      'refinery/investments/investment':
+        title: Title
+        content: Content

@@ -1,0 +1,28 @@
+/<% content_for :body do %>
+/  <ul id="memberships">
+/    <% @memberships.each do |membership| %>
+/      <li>
+/        <%= link_to membership.title, refinery.memberships_membership_path(membership) %>
+/      </li>
+/    <% end %>
+/  </ul>
+/<% end %>
+
+/<%= render '/refinery/content_page' %>
+
+
+#guest
+  %table{:border => "0", :width => "100%"}
+    %tr
+      %th{:align => "left", :scope => "col"} REGISTERED GUEST MEMBERSHIIP $0 / MONTH
+    %tr
+      %td Members will have access to the Affluence community
+    %tr
+      %td Create connections and discussion boards
+    %tr
+      %td Grow your worth by connecting with like minded individuals
+    %tr
+      %td Use Afflluence Concierge to book your next event and post pictures on our network
+    %tr
+      %td
+        %input#signup{:name => "signup", :type => "submit", :value => "Sign Up"}/

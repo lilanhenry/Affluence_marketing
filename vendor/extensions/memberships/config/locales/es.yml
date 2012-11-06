@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      memberships:
+        title: Memberships
+#        article: masculino/femenino
+    memberships:
+      admin:
+        memberships:
+          actions:
+            create_new: Crear nuevo membership
+            reorder: Reordenar memberships
+            reorder_done: Reordenación de memberships completada
+          records:
+            title: Memberships
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay memberships todavía. Pulsa en "Crear nuevo Membership" para crear tu primer membership.
+          membership:
+            view_live_html: Ver este membership como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este membership
+            delete: Borrar este membership para siempre
+      memberships:
+        show:
+          other: Otros memberships
+  activerecord:
+    attributes:
+      'refinery/memberships/membership':
+        title: Title
+        content: Content

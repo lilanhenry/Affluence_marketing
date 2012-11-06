@@ -1,0 +1,28 @@
+en:
+  refinery:
+    plugins:
+      investments:
+        title: Investments
+    investments:
+      admin:
+        investments:
+          actions:
+            create_new: Add New Investment
+            reorder: Reorder Investments
+            reorder_done: Done Reordering Investments
+          records:
+            title: Investments
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Investments yet. Click "Add New Investment" to add your first investment.
+          investment:
+            view_live_html: View this investment live <br/><em>(opens in a new window)</em>
+            edit: Edit this investment
+            delete: Remove this investment forever
+      investments:
+        show:
+          other: Other Investments
+  activerecord:
+    attributes:
+      'refinery/investments/investment':
+        title: Title
+        content: Content

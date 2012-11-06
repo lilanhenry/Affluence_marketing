@@ -1,0 +1,28 @@
+fr:
+  refinery:
+    plugins:
+      investments:
+        title: Investments
+    investments:
+      admin:
+        investments:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Investment
+            reorder: Réordonner les Investments
+            reorder_done: Fin de réordonnancement des Investments
+          records:
+            title: Investments
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Investment. Cliquer sur "Créer un(e) nouve(au/l/lle) Investment" pour créer votre premi(er/ère) investment.'
+          investment:
+            view_live_html: Voir ce(t/tte) investment <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) investment
+            delete: Supprimer définitivement ce(t/tte) investment
+      investments:
+        show:
+          other: Autres Investments
+  activerecord:
+    attributes:
+      'refinery/investments/investment':
+        title: Title
+        content: Content

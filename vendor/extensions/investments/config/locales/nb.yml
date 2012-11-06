@@ -1,0 +1,28 @@
+nb:
+  refinery:
+    plugins:
+      investments:
+        title: Investments
+    investments:
+      admin:
+        investments:
+          actions:
+            create_new: Lag en ny Investment
+            reorder: Endre rekkefølgen på Investments
+            reorder_done: Ferdig å endre rekkefølgen Investments
+          records:
+            title: Investments
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Investments enda. Klikk på "Lag en ny Investment" for å legge til din første investment.
+          investment:
+            view_live_html: Vis hvordan denne investment ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne investment
+            delete: Fjern denne investment permanent
+      investments:
+        show:
+          other: Andre Investments
+  activerecord:
+    attributes:
+      'refinery/investments/investment':
+        title: Title
+        content: Content

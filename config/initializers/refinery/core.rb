@@ -43,6 +43,9 @@ Refinery::Core.configure do |config|
   # Add extra tags to the wymeditor whitelist e.g. = {'tag' => {'attributes' => {'1' => 'href'}}} or just {'tag' => {}}
   # config.wymeditor_whitelist_tags = {}
 
+  config.layout_template_whitelist = ["application"]
+  config.use_layout_templates = true 
+
   # Register extra javascript for backend
   # config.register_javascript "prototype-rails"
 

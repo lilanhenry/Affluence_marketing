@@ -8,3 +8,9 @@
 
 # Added by Refinery CMS Pages extension
 Refinery::Pages::Engine.load_seed
+
+# Added by Refinery CMS Memberships extension
+Refinery::Memberships::Engine.load_seed
+
+# Added by Refinery CMS Investments extension
+Refinery::Investments::Engine.load_seed

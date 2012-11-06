@@ -1,0 +1,28 @@
+fr:
+  refinery:
+    plugins:
+      memberships:
+        title: Memberships
+    memberships:
+      admin:
+        memberships:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Membership
+            reorder: Réordonner les Memberships
+            reorder_done: Fin de réordonnancement des Memberships
+          records:
+            title: Memberships
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Membership. Cliquer sur "Créer un(e) nouve(au/l/lle) Membership" pour créer votre premi(er/ère) membership.'
+          membership:
+            view_live_html: Voir ce(t/tte) membership <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) membership
+            delete: Supprimer définitivement ce(t/tte) membership
+      memberships:
+        show:
+          other: Autres Memberships
+  activerecord:
+    attributes:
+      'refinery/memberships/membership':
+        title: Title
+        content: Content

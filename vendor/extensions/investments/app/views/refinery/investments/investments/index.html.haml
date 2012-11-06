@@ -1,0 +1,71 @@
+%div.top_bottom
+  %ul.top_bottom-list.left
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} Stock Info
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} Press Releases 
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} Analyst Reports
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} Company Presentation
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} Request Info/Contact
+    %li.top_bottom_a.separator
+    %li.top_bottom_a
+      %a{:href => "/home"} About Us
+
+
+#container
+  #content-left
+    %h2 Investor News
+  #content-right
+    %h2 Lorem Ipsum Dolor Sumit 
+  #clear
+  #content-left
+    %h2 Q4 FY12 EARNINGS RELEASE
+    %p In hac habitasse platea dictumst. Phasellus varius imperdiet augue, in condimentum ipsum interdum et. Duis fermentum tortor vel metus egestas condimentum. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla eu quam urna, quis tristique metus. Fusce id eros metus, vel blandit ligula.
+    %h4
+      %a{:href => "#"} Listen to the audio webcast  >
+    =image_tag "stock_pic.png"
+  #content-right
+    =image_tag "Capture.PNG"
+    %p In hac habitasse platea dictumst. Phasellus varius imperdiet augue, in condimentum ipsum interdum et. Duis fermentum tortor vel metus egestas condimentum. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla eu quam urna, quis tristique metus. Fusce id eros metus, vel blandit ligula.
+    %p In hac habitasse platea dictumst. Phasellus varius imperdiet augue, in condimentum ipsum interdum et. Duis fermentum tortor vel metus egestas condimentum. Nulla facilisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla eu quam urna, quis tristique metus. Fusce id eros metus, vel blandit ligula.
+  #clear
+
+
+  %div.footer_top
+  %ul.footer_top-list
+    %li.footer_top_a
+      %a{:href => "/home"} Help
+    %li.footer_top_a
+      %a{:href => "/home"} Contact Us
+    %li.footer_top_a
+      %a{:href => "/home"} Fees
+    %li.footer_top_a
+      %a{:href => "/home"} Security
+    %li.footer_top_a
+      %a{:href => "/home"} Account features
+    %li.footer_top_a
+      %a{:href => "/home"} Developer
+    %li.footer_top_a
+      %a{:href => "/home"} Partners
+
+
+
+/<% content_for :body do %>
+/  <ul id="investments">
+/    <% @investments.each do |investment| %>
+/      <li>
+/        <%= link_to investment.title, refinery.investments_investment_path(investment) %>
+/      </li>
+/    <% end %>
+/  </ul>
+/<% end %>
+
+/<%= render '/refinery/content_page' %>

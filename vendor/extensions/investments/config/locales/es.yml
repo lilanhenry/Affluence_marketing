@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      investments:
+        title: Investments
+#        article: masculino/femenino
+    investments:
+      admin:
+        investments:
+          actions:
+            create_new: Crear nuevo investment
+            reorder: Reordenar investments
+            reorder_done: Reordenación de investments completada
+          records:
+            title: Investments
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay investments todavía. Pulsa en "Crear nuevo Investment" para crear tu primer investment.
+          investment:
+            view_live_html: Ver este investment como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este investment
+            delete: Borrar este investment para siempre
+      investments:
+        show:
+          other: Otros investments
+  activerecord:
+    attributes:
+      'refinery/investments/investment':
+        title: Title
+        content: Content
