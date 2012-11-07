@@ -3,7 +3,7 @@
 
 #container {
   padding: 5px;
-  width: 1210px;
+  width: 1210;
   margin: 0 auto;
 }
 #container #content-left, #content-right {
@@ -4290,6 +4290,13 @@ text-decoration: none;
 }
 #container #benefits table {
   background-color: #FFF;
+  width: 800px;
+  height: 600px;
 }
+
+#container #benefits h1{
+  color: white;
+}
+
 
 

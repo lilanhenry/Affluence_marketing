@@ -10,19 +10,188 @@
 
 /<%= render '/refinery/content_page' %>
 
+/table{:border => "0", :width => "100%"}
 
-#guest
-  %table{:border => "0", :width => "100%"}
-    %tr
-      %th{:align => "left", :scope => "col"} REGISTERED GUEST MEMBERSHIIP $0 / MONTH
-    %tr
-      %td Members will have access to the Affluence community
-    %tr
-      %td Create connections and discussion boards
-    %tr
-      %td Grow your worth by connecting with like minded individuals
-    %tr
-      %td Use Afflluence Concierge to book your next event and post pictures on our network
-    %tr
-      %td
-        %input#signup{:name => "signup", :type => "submit", :value => "Sign Up"}/
+
+/#guest
+/  %table.table.table-bordered
+/    %tr
+/      %th{:align => "left", :scope => "col"} REGISTERED GUEST MEMBERSHIIP $0 / MONTH
+/    %tr
+/      %td Members will have access to the Affluence community
+/    %tr
+/      %td Create connections and discussion boards
+/    %tr
+/      %td Grow your worth by connecting with like minded individuals
+/    %tr
+/      %td Use Afflluence Concierge to book your next event and post pictures on our network
+/    %tr
+/      %td
+/        %button.btn.btn-primary{:type => "button"} Sign Up
+       
+/#guest1
+/  %table.table.table-bordered
+/    %tr
+/      %th{:align => "left", :scope => "col"} PREMIUM MEMBERSHIIP $50 / MONTH
+/    %tr
+/      %td Members will have access to the Affluence community
+/    %tr
+/      %td Create connections and discussion boards
+/    %tr
+/      %td Grow your worth by connecting with like minded individuals
+/    %tr
+/      %td Use Afflluence Concierge to book your next event and post pictures on our network
+/    %tr
+/      %td
+/        %button.btn.btn-primary{:type => "button"} Sign Up
+
+
+#container
+  #content-left
+    #guest
+      %table.table.table-hover
+        %tr
+          %th{:align => "left", :scope => "col"} REGISTERED GUEST MEMBERSHIIP $0 / MONTH
+        %tr
+          %td Members will have access to the Affluence community
+        %tr
+          %td Create connections and discussion boards
+        %tr
+          %td Grow your worth by connecting with like minded individuals
+        %tr
+          %td Use Afflluence Concierge to book your next event and post pictures on our network
+        %tr
+          %td
+            %button.btn.btn-primary{:type => "button"} Sign Up
+
+    #guest1
+      %table{:border => "0", :width => "100%"}
+        %tr
+          %th{:align => "left", :scope => "col"} PREMIUM MEMBERSHIIP $50 / MONTH
+        %tr
+          %td Members will have access to the Affluence community
+        %tr
+          %td Create connections and discussion boards
+        %tr
+          %td Grow your worth by connecting with like minded individuals
+        %tr
+          %td Use Afflluence Concierge to book your next event and post pictures on our network
+        %tr
+          %td
+            %button.btn.btn-large.btn-primary{:type => "button"} Sign Up
+    #guest2
+      %table{:border => "0", :width => "100%"}
+        %tr
+          %th{:align => "left", :scope => "col"} UNVETTED MEMBERSHIP $25 / MONTH
+        %tr
+          %td Members will have access to the Affluence community
+        %tr
+          %td Create connections and discussion boards
+        %tr
+          %td Grow your worth by connecting with like minded individuals
+        %tr
+          %td Use Afflluence Concierge to book your next event and post pictures on our network
+        %tr
+          %td
+            %input#signup{:name => "signup", :type => "submit", :value => "Sign Up"}/
+  #content-right
+    %h1 Sign Up for Affluence Connect
+    #sign
+      %h3 PREMIUM MEMBERSHIP
+      %br/
+      %form#form1{:action => "", :method => "post", :name => "form1"}
+        #fname
+          FIRST NAME
+          %br/
+          %input{:name => "fname", :size => "45", :type => "text", :placeholder => "Blake"}/
+        #lname
+          LAST NAME
+          %br/
+          %input{:name => "sname", :size => "45", :type => "text"}/
+        #email{:style => "clear:both;"}
+          EMAIL
+          %br/
+          %input{:name => "email", :size => "95", :type => "text"}/
+        #fname
+          PASSWORD
+          %br/
+          %input{:name => "pass", :size => "45", :type => "text"}/
+        #lname
+          CONFIRM PASSWORD
+          %br/
+          %input{:name => "cpass", :size => "45", :type => "text"}/
+        #phone{:style => "clear:both"}
+          PHONE NUMBER(OPTIONAL)
+          %br/
+          %input{:name => "phone", :size => "45", :type => "text"}/
+        #join
+          %button.btn.btn-primary{:type => "button"} Join
+          By clicking 'join' or using Affluence Connect you agree....to
+      %p  
+    %p  
+  #clear
+  #benefits
+    %br/
+    %h1{:align => "center"} Don't wait! Join Affluence Connect today!
+    %table.table.table-bordered{:align => "center", :border => "1", :width => "800", :height => "500"}
+      %tr
+        %th{:scope => "col"}  
+        %th{:scope => "col"} REGISTERED GUEST
+        %th{:scope => "col"} UNVETTED
+        %th{:scope => "col"} PREMIUM
+      %tr
+        %td
+          %strong Post Discussions
+        %td  
+        %td  
+        %td  
+      %tr
+        %td Send Messages
+        %td  
+        %td  
+        %td  
+      %tr
+        %td Event Access
+        %td  
+        %td  
+        %td  
+      %tr
+        %td Speciality Offers
+        %td  
+        %td  
+        %td  
+      %tr
+        %td Custom Profile
+        %td  
+        %td  
+        %td  
+      %tr
+        %td Photo Stream
+        %td  
+        %td  
+        %td  
+      %tr
+        %td Member Access
+        %td  
+        %td  
+        %td  
+      %tr
+        %td Email Alerts
+        %td  
+        %td  
+        %td  
+      %tr
+        %td Send Invitations
+        %td  
+        %td  
+        %td 
+      %tr
+        %td  
+        %td{:align => "center"}
+          %button.btn.btn-primary{:type => "button"} Sign Up
+        %td{:align => "center"}
+          %input#button2{:name => "button2", :type => "submit", :value => "Submit"}/
+        %td{:align => "center"}
+          %input#button3{:name => "button3", :type => "submit", :value => "Submit"}/
+    %br/
+    %br/        
