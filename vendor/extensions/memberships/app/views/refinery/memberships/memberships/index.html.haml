@@ -45,6 +45,9 @@
 /      %td
 /        %button.btn.btn-primary{:type => "button"} Sign Up
 
+/%header#header
+/  = render '/refinery/header'
+/  .container.width1210
 
 #container
   #content-left
@@ -65,7 +68,7 @@
             %button.btn.btn-primary{:type => "button"} Sign Up
 
     #guest1
-      %table{:border => "0", :width => "100%"}
+      %table.table.table-hover{:border => "0", :width => "100%"}
         %tr
           %th{:align => "left", :scope => "col"} PREMIUM MEMBERSHIIP $50 / MONTH
         %tr
@@ -80,7 +83,7 @@
           %td
             %button.btn.btn-large.btn-primary{:type => "button"} Sign Up
     #guest2
-      %table{:border => "0", :width => "100%"}
+      %table.table.table-hover{:border => "0", :width => "100%"}
         %tr
           %th{:align => "left", :scope => "col"} UNVETTED MEMBERSHIP $25 / MONTH
         %tr
@@ -93,7 +96,7 @@
           %td Use Afflluence Concierge to book your next event and post pictures on our network
         %tr
           %td
-            %input#signup{:name => "signup", :type => "submit", :value => "Sign Up"}/
+            %button.btn.btn-primary{:type => "button"} Sign Up
   #content-right
     %h1 Sign Up for Affluence Connect
     #sign
@@ -142,56 +145,82 @@
       %tr
         %td
           %strong Post Discussions
-        %td  
-        %td  
-        %td  
+        %td=image_tag "member.png"
+        %td
+        %td=image_tag "member.png"
       %tr
-        %td Send Messages
-        %td  
-        %td  
-        %td  
-      %tr
-        %td Event Access
-        %td  
-        %td  
-        %td  
-      %tr
-        %td Speciality Offers
-        %td  
-        %td  
-        %td  
-      %tr
-        %td Custom Profile
-        %td  
-        %td  
-        %td  
-      %tr
-        %td Photo Stream
-        %td  
-        %td  
-        %td  
-      %tr
-        %td Member Access
-        %td  
-        %td  
-        %td  
-      %tr
-        %td Email Alerts
-        %td  
-        %td  
-        %td  
-      %tr
-        %td Send Invitations
-        %td  
-        %td  
         %td 
+          %strong Send Messages
+        %td  
+        %td=image_tag "member.png"
+        %td=image_tag "member.png"
+      %tr
+        %td 
+          %strong Event Access
+        %td  
+        %td  
+        %td=image_tag "member.png"
+      %tr
+        %td 
+          %strong Speciality Offers
+        %td  
+        %td=image_tag "member.png"
+        %td=image_tag "member.png"
+      %tr
+        %td 
+          %strong Custom Profile
+        %td=image_tag "member.png"
+        %td=image_tag "member.png"
+        %td=image_tag "member.png"
+      %tr
+        %td 
+          %strong Photo Stream
+        %td  
+        %td=image_tag "member.png"
+        %td=image_tag "member.png"
+      %tr
+        %td 
+          %strong Member Access
+        %td=image_tag "member.png"
+        %td  
+        %td=image_tag "member.png"
+      %tr
+        %td 
+          %strong Email Alerts
+        %td  
+        %td=image_tag "member.png"
+        %td=image_tag "member.png"
+      %tr
+        %td 
+          %strong Send Invitations
+        %td  
+        %td         
+        %td=image_tag "member.png"
       %tr
         %td  
         %td{:align => "center"}
           %button.btn.btn-primary{:type => "button"} Sign Up
         %td{:align => "center"}
-          %input#button2{:name => "button2", :type => "submit", :value => "Submit"}/
+          %button.btn.btn-primary{:type => "button"} Sign Up
         %td{:align => "center"}
-          %input#button3{:name => "button3", :type => "submit", :value => "Submit"}/
+          %button.btn.btn-primary{:type => "button"} Sign Up
     %br/
-    %br/        
+    %br/ 
+  #clear
+
+%div.footer_top
+  %ul.footer_top-list
+    %li.footer_top_a
+      %a{:href => "/home"} Help
+    %li.footer_top_a
+      %a{:href => "/home"} Contact Us
+    %li.footer_top_a
+      %a{:href => "/home"} Fees
+    %li.footer_top_a
+      %a{:href => "/home"} Security
+    %li.footer_top_a
+      %a{:href => "/home"} Account features
+    %li.footer_top_a
+      %a{:href => "/home"} Developer
+    %li.footer_top_a
+      %a{:href => "/home"} Partners       

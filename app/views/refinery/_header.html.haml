@@ -1,15 +1,22 @@
-.navbar.navbar
-  .navbar-inner
-    .container.width1210
-      %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %div.password_block.bg
-        %input.input.password{:name=>"user[email]", :type => "text",:placeholder=>"Email Address"}
-      %div.password_block.bg
-        %input.input.password{:name => "user[password]", :type => "password",:placeholder=>"Password"}
-                 
+/%h1#logo
+/  = link_to Refinery::Core.site_name, refinery.root_path
+= render(:partial => "/refinery/menu", :locals => { |
+    :dom_id => 'menu',                              |
+    :css => 'menu'                                  |
+  })                                                |
+
+/.navbar.navbar
+/  .navbar-inner
+/    .container.width1210
+/      %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+/        %span.icon-bar
+/        %span.icon-bar
+/        %span.icon-bar
+/      %div.password_block.bg
+/        %input.input.password{:name=>"user[email]", :type => "text",:placeholder=>"Email Address"}
+/      %div.password_block.bg
+/        %input.input.password{:name => "user[password]", :type => "password",:placeholder=>"Password"}
+/                 
   		
 
   :javascript

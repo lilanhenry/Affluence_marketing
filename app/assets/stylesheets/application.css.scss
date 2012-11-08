@@ -3533,8 +3533,9 @@ div.password_block .password{
 .top_bottom {
     height: 55px;
     padding-top: 3px;
-    background: #f7f7f7 url(investor_relations.png) no-repeat 15px 13px;
+    background: #f7f7f7 url(invest.png) no-repeat 15px 13px;
     position: center;
+    padding-left: 60px;
 }
 .central{
     height: 479px;
@@ -4297,6 +4298,25 @@ text-decoration: none;
 #container #benefits h1{
   color: white;
 }
+
+
+#menu ul {
+  list-style: none;
+  padding: 0px;
+  li {
+    float: left;
+    margin-right: 10px;
+    a {
+      display: block;
+      padding: 5px 10px;
+      text-decoration: none;
+    }
+    &.selected a, a:hover {
+      background: #CCC;
+    }
+  }
+}
+
 
 
 
