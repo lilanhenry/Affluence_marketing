@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+ruby '1.9.3'
+gem  'rails', '3.2.8'
 gem 'bootstrap-sass', '2.0.4'
 gem 'compass'
 gem 'haml'
 gem 'haml-rails'
+
+gem "heroku", "~> 2.33.0"
 
 
 gem 'pg', :group => [:development, :production]
